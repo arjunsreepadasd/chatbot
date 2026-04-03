@@ -1,7 +1,3 @@
-# Environment files
-.env
-.env.*
-gitignore_content = """
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -20,17 +16,13 @@ dist/
 # Logs
 *.log
 
+# Environment secrets (do NOT commit the real .env)
+.env
+
 # IDEs
 .vscode/
 .idea/
-.env
-.env.example
+
 # OS files
 .DS_Store
 Thumbs.db
-"""
-
-with open(".gitignore", "w") as f:
-    f.write(gitignore_content.strip())
-
-print(".gitignore file created successfully!")
